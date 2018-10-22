@@ -10,12 +10,25 @@ package basicosmiguel;
  * @author playvicio
  */
 public class BasicosMiguel {
-
-    /**
-     * @param args the command line arguments
-     */
+    public static void cadenas(){
+    
+    //Declaracion variable
+     String nombre;
+     String apellidos;
+     
+    // asignación de variable
+     nombre = "Miguel Angel";
+     apellidos = "Lara Rodrigo";
+     
+     //Imprimir por pantalla
+    System.out.println("Nombre: " + nombre);
+    System.out.println("Apellidos: " + apellidos);
+     
+    }
+    
     public static void main(String[] args) {
         // TODO code application logic here
+        cadenas(); //llamada al método
     }
     
 }
