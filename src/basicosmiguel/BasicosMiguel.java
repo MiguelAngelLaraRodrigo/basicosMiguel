@@ -9,6 +9,7 @@ package basicosmiguel;
  *
  * @author playvicio
  */
+import java.util.Scanner;
 public class BasicosMiguel {
     
          /**
@@ -35,11 +36,24 @@ public class BasicosMiguel {
         System.out.println(doble);
     }
 
-    /**
-     * @param args the command line arguments
-     */
+    public static void logicos(){
+        boolean puedeBeber;
+        Scanner scanner = new Scanner(System.in);
+	System.out.print("Dime tú edad:");
+	int edad = scanner.nextInt();
+        puedeBeber = (edad>=18)&&(edad<=60);
+        if(puedeBeber){
+            System.out.println("Si puede beber");
+        }else{
+            System.out.println("No puede beber");
+        }
+        
+    
+    }
     public static void main(String[] args) {
         // TODO code application logic here
+        logicos();
+        
         numericos();  // Llamada al método
     }
     
